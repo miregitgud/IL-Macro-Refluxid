@@ -43,7 +43,6 @@
             android:layout_width="215dp"
             android:layout_height="224dp"
             android:layout_marginBottom="80dp"
-            android:src=""
             app:layout_constraintBottom_toTopOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
