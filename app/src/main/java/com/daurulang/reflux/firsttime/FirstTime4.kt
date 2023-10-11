@@ -1,5 +1,6 @@
 package com.daurulang.reflux.firsttime
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -17,6 +18,10 @@ class FirstTime4 : AppCompatActivity() {
 
         val myView = findViewById<View>(R.id.view4)
         myView.setBackgroundResource(R.drawable.gradient_drawable)
+
+        binding.button.setOnClickListener{
+            startActivity(Intent(this@FirstTime4, Onboarding::class.java))
+        }
     }
 
 }

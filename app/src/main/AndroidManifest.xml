@@ -13,7 +13,14 @@
         android:theme="@style/Theme.Refluxid"
         tools:targetApi="31">
         <activity
-            android:name=".FirstTime4"
+            android:name=".firsttime.Onboarding"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".firsttime.FirstTime4"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
