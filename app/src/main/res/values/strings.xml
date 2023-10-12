@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Reflux.id</string>
+    <string name="password_toggle_description">Toggle password visibility</string>
 </resources>

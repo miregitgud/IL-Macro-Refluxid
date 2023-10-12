@@ -1,4 +1,4 @@
-package com.daurulang.reflux.firsttime
+package com.daurulang.reflux.registerscreen
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,22 +6,21 @@ import android.os.Bundle
 import android.view.View
 import androidx.databinding.DataBindingUtil
 import com.daurulang.reflux.R
-import com.daurulang.reflux.databinding.ActivityFirstTime1Binding
-import com.daurulang.reflux.registerscreen.RegisterScreen1
+import com.daurulang.reflux.databinding.ActivityRegisterScreen1Binding
 
-class FirstTime1 : AppCompatActivity() {
+class RegisterScreen1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val binding : ActivityFirstTime1Binding = DataBindingUtil.setContentView(this@FirstTime1,
-            R.layout.activity_first_time1
+        val binding : ActivityRegisterScreen1Binding = DataBindingUtil.setContentView(this@RegisterScreen1,
+            R.layout.activity_register_screen1
         )
 
         val myView = findViewById<View>(R.id.view)
         myView.setBackgroundResource(R.drawable.gradient_drawable)
 
         binding.button.setOnClickListener{
-            startActivity(Intent(this@FirstTime1, FirstTime2::class.java))
+            startActivity(Intent(this@RegisterScreen1, RegisterScreen2::class.java))
         }
     }
 }

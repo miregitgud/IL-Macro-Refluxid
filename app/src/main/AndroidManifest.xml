@@ -13,6 +13,26 @@
         android:theme="@style/Theme.Refluxid"
         tools:targetApi="31">
         <activity
+            android:name=".halamanlogin.Login"
+            android:exported="false" />
+        <activity
+            android:name=".registerscreen.RegisterScreen3"
+            android:exported="false" />
+        <activity
+            android:name=".registerscreen.RegisterScreen2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".registerscreen.RegisterScreen1"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".firsttime.Onboarding"
             android:exported="false">
             <meta-data
