@@ -6,6 +6,7 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.daurulang.reflux.R
@@ -17,6 +18,7 @@ class RegisterScreen3 : AppCompatActivity() {
 
     private lateinit var binding: ActivityRegisterScreen3Binding
     private var imageButton: ImageButton? = null
+    private var imageView: ImageView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,9 +34,10 @@ class RegisterScreen3 : AppCompatActivity() {
         supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.BLUE))
 
         // Use safe call operator (?)
+        imageView = binding.imagePic
         imageButton = binding.imagePick
 
-        imageButton?.setOnClickListener {
+        imageView?.setOnClickListener {
             ImagePicker.with(this)
                 .crop()
                 .compress(1024)
@@ -47,6 +50,6 @@ class RegisterScreen3 : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
 
         // Use safe call operator (?) here as well
-        imageButton?.setImageURI(data?.data)
+        imageView?.setImageURI(data?.data)
     }
 }

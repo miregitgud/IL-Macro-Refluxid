@@ -73,12 +73,26 @@
             android:padding="30dp"
             android:background="@android:color/white"
             android:src="@drawable/empty_user"
+            android:elevation="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/textView4"
             app:layout_constraintVertical_bias="0.179" />
+        <ImageView
+            android:id="@+id/imagePic"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="fitCenter"
+            android:elevation="10dp"
+            android:src="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textView4"
+            app:layout_constraintVertical_bias="0.179"/>
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"

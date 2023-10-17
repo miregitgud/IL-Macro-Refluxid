@@ -102,11 +102,12 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginTop="12dp"
-        android:background="@color/white"
+        android:background="@drawable/edit_text_border"
         android:hint="Nama pengguna atau email"
         android:importantForAutofill="no"
         android:inputType="text"
-        android:padding="10dp"
+        android:paddingStart="10dp"
+        android:textSize="15dp"
         android:textColor="#040404"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -114,38 +115,39 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_below="@id/username"
-        android:layout_marginTop="8dp"
-        android:background="@color/white"
-        android:hint="Kata Sandi"
-        android:importantForAutofill="no"
-        android:inputType="textPassword"
-        android:padding="10dp"
-        android:textColor="#040404"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username"
-        tools:ignore="MissingConstraints" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPasswordLayout"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            app:passwordToggleEnabled="true"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="261dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.387"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.376">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="200dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#5999E3"
-        android:text="MASUK"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        tools:ignore="MissingConstraints" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <ImageView
+        <Button
+            android:id="@+id/button"
+            android:layout_width="201dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_rectangle_button"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="Masuk"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword"
+            app:layout_constraintVertical_bias="0.27" />
+
+        <ImageView
         android:layout_width="301dp"
         android:layout_height="159dp"
         android:layout_marginTop="12dp"
@@ -182,6 +184,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textSize="15dp"
+            android:background="@drawable/edit_text_border"
+            android:hint="Kata sandi"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username"
+            app:layout_constraintVertical_bias="0.124" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
