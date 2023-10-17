@@ -7,7 +7,7 @@ import android.view.View
 import androidx.databinding.DataBindingUtil
 import com.daurulang.reflux.R
 import com.daurulang.reflux.databinding.ActivityFirstTime1Binding
-import com.daurulang.reflux.registerscreen.RegisterScreen1
+
 
 class FirstTime1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
