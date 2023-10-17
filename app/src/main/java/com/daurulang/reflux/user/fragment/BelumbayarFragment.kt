@@ -13,6 +13,6 @@ class BelumbayarFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.belumbayar, container, false)
+        return inflater.inflate(R.layout.user_pesananmu_belumbayar, container, false)
     }
 }
