@@ -1,10 +1,12 @@
 package com.daurulang.reflux.edukasi
 
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -13,6 +15,7 @@ import com.daurulang.reflux.databinding.ActivityEducationBinding
 import com.daurulang.reflux.edukasi.fragment.BeritaFragment
 import com.daurulang.reflux.edukasi.fragment.ForumFragment
 import com.daurulang.reflux.edukasi.fragment.IdeDaurFragment
+import com.daurulang.reflux.user.UserAccount1
 
 
 class Education : AppCompatActivity() {
@@ -93,6 +96,25 @@ class Education : AppCompatActivity() {
         menuInflater.inflate(R.menu.menu, menu)
         return true
     }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val intent = Intent(this@Education, UserAccount1::class.java)
+
+        when (item.itemId) {
+            android.R.id.home -> {
+                startActivity(intent)
+                return true
+            }
+            else -> {
+                startActivity(intent)
+                return true
+            }
+        }
+    }
 
 
+    override fun onBackPressed() {
+        val intent = Intent(this, UserAccount1::class.java)
+        startActivity(intent)
+        finish()
+    }
 }

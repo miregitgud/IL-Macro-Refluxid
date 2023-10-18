@@ -1,4 +1,4 @@
-package com.daurulang.reflux.halamanlogin
+package com.daurulang.reflux.registerscreen.halamanlogin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
