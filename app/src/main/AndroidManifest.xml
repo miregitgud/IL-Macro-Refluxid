@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.floatingactionbuttontobottomnavigation">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -31,34 +30,6 @@
             android:name=".registerscreen.RegisterScreen5"
             android:exported="false" />
         <activity
-            android:name=".halamanproduk.KonfirmasiPembelian"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".halamanproduk.Keranjang"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".edukasi.Education"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".edukasi.TempatPensil"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".registerscreen.RegisterScreen4"
             android:exported="false" />
         <activity
@@ -86,22 +57,25 @@
             android:name=".user.UserAccount1"
             android:exported="false" />
         <activity
-            android:name=".halamanproduk.MainHalamanProduk"
+            android:name=".edukasi.Education"
             android:exported="true">
 
-<<<<<<< HEAD
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-=======
->>>>>>> 21990bc82a7a24a4d8654121a13ad52e19788e46
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".registerscreen.halamanlogin.Login"
+            android:name=".halamanlogin.Login"
             android:exported="false" />
+        <activity
+            android:name=".halamanproduk.Keranjang"
+            android:exported="false" />
+        <activity
+            android:name=".halamanproduk.KonfirmasiPembelian"
+            android:exported="false" />
+        <activity
+            android:name=".halamanproduk.MainHalamanProduk"
+            android:exported="true" />
         <activity
             android:name=".registerscreen.RegisterScreen3"
             android:exported="false" />

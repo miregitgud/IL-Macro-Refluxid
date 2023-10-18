@@ -7,7 +7,7 @@ import android.view.View
 import androidx.databinding.DataBindingUtil
 import com.daurulang.reflux.R
 import com.daurulang.reflux.databinding.ActivityOnboardingBinding
-import com.daurulang.reflux.registerscreen.halamanlogin.Login
+import com.daurulang.reflux.halamanlogin.Login
 import com.daurulang.reflux.registerscreen.RegisterScreen1
 
 class Onboarding : AppCompatActivity() {
