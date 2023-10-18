@@ -23,59 +23,107 @@
           app:layout_constraintTop_toTopOf="@+id/view7"
           tools:layout_editor_absoluteX="0dp" />
 
-      <RadioGroup
-          android:layout_width="335dp"
-          android:layout_height="70dp"
-          android:layout_marginTop="24dp"
-          android:orientation="horizontal"
-          android:background="@color/white"
+      <ImageView
+          android:id="@+id/imageView2"
+          android:layout_width="70dp"
+          android:layout_height="31dp"
+          android:layout_marginTop="8dp"
+          android:contentDescription="point"
+          android:src="@drawable/point"
           app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="1.0"
           app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/actionbar4">
+          app:layout_constraintTop_toBottomOf="@+id/actionbar4" />
+
+      <SearchView
+          android:id="@+id/s_pojok"
+          android:layout_width="374dp"
+          android:layout_height="32dp"
+          android:layout_marginTop="56dp"
+          android:background="@drawable/corner_bg"
+          android:iconifiedByDefault="false"
+          android:queryHint="Masukkan topik yang ingin dicari disini.."
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.486"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/actionbar4" />
+
+      <RadioGroup
+          android:layout_width="280dp"
+          android:layout_height="56dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/corner_bg"
+          android:gravity="center"
+          android:orientation="horizontal"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/s_pojok">
 
          <RadioButton
              android:id="@+id/rb_Berita"
-             android:layout_width="104dp"
+             android:layout_width="94dp"
              android:layout_height="match_parent"
-             android:text="Berita"
-             android:button="@null"
              android:background="@drawable/radio_button_bg"
+             android:button="@null"
+             android:checked="true"
              android:gravity="center"
              android:padding="10dp"
+             android:text="Berita"
+             android:fontFamily="@font/lato_bold"
              android:textColor="@color/black"
-             android:textSize="16sp"
-             android:checked="true"
-             />
+             android:textSize="16sp" />
 
          <RadioButton
              android:id="@+id/rb_Forum"
-             android:layout_width="114dp"
+             android:layout_width="94dp"
              android:layout_height="match_parent"
-             android:text="Forum"
-             android:button="@null"
              android:background="@drawable/radio_button_bg"
+             android:button="@null"
+             android:checked="false"
              android:gravity="center"
              android:padding="10dp"
+             android:text="Forum"
+             android:fontFamily="@font/lato_bold"
              android:textColor="@color/black"
-             android:textSize="16sp"
-             android:checked="false"
-             />
+             android:textSize="16sp" />
 
          <RadioButton
              android:id="@+id/rb_IdeDaur"
-             android:layout_width="116dp"
+             android:layout_width="94dp"
              android:layout_height="match_parent"
-             android:text="Ide Daur\nUlang"
-             android:button="@null"
              android:background="@drawable/radio_button_bg"
+             android:button="@null"
+             android:checked="false"
              android:gravity="center"
              android:padding="10dp"
+             android:text="Ide Daur\nUlang"
+             android:fontFamily="@font/lato_bold"
              android:textColor="@color/black"
-             android:textSize="16sp"
-             android:checked="false"
-             />
-
+             android:textSize="15sp" />
       </RadioGroup>
+
+      <FrameLayout
+          android:id="@+id/container_fragment_education"
+          android:layout_width="334dp"
+          android:layout_height="354dp"
+          android:layout_marginTop="236dp"
+          android:background="@drawable/corner_bg"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <FrameLayout
+          android:id="@+id/container_fragment_education2"
+          android:layout_width="332dp"
+          android:layout_height="342dp"
+          android:layout_marginTop="64dp"
+          android:background="@drawable/corner_bg"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/container_fragment_education" />
 
 
    </androidx.constraintlayout.widget.ConstraintLayout>
