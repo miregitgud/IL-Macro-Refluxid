@@ -104,6 +104,7 @@
       </RadioGroup>
 
       <FrameLayout
+          android:visibility="gone"
           android:id="@+id/container_fragment_education"
           android:layout_width="334dp"
           android:layout_height="354dp"
@@ -115,6 +116,7 @@
           app:layout_constraintTop_toTopOf="parent" />
 
       <FrameLayout
+          android:visibility="gone"
           android:id="@+id/container_fragment_education2"
           android:layout_width="332dp"
           android:layout_height="342dp"
@@ -125,6 +127,78 @@
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toBottomOf="@+id/container_fragment_education" />
 
+      <FrameLayout
+          android:id="@+id/container_fragment_education3"
+          android:visibility="gone"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+         <RelativeLayout
+             android:layout_marginTop="210dp"
+             android:layout_width="match_parent"
+             android:elevation="16dp"
+             android:layout_height="180dp">
+
+            <ImageView
+                android:layout_width="171dp"
+                android:layout_height="156dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="25dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/buku_idedaur" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="45dp"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center_vertical"
+                android:text="Ide Daur Ulang"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="46dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/lato_regular"
+                android:text="Sampahmu bisa jadi\ncuan loh!"
+                android:textColor="@color/black"
+                android:textAlignment="textEnd" />
+
+         </RelativeLayout>
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/container_fragment_education4"
+             android:layout_width="match_parent"
+             android:layout_height="400dp"
+             android:layout_gravity="bottom"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.0"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="0.992">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:fontFamily="@font/lato_bold"
+                android:paddingStart="16dp"
+                android:text="Beberapa Ide Yang Populer"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+         </androidx.cardview.widget.CardView>
+
+      </FrameLayout>
 
    </androidx.constraintlayout.widget.ConstraintLayout>
 
