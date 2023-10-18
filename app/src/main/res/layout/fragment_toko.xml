@@ -83,7 +83,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.409" />
 
-        <Button
+        <android.widget.Button
             android:id="@+id/button"
             android:layout_width="201dp"
             android:layout_height="30dp"
@@ -91,6 +91,7 @@
             android:gravity="center"
             android:text="Daftar"
             android:textSize="10sp"
+            android:textColor="@color/white"
             android:fontFamily="@font/lato_regular"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
