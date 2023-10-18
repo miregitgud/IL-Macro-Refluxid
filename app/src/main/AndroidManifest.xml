@@ -31,6 +31,34 @@
             android:name=".registerscreen.RegisterScreen5"
             android:exported="false" />
         <activity
+            android:name=".halamanproduk.KonfirmasiPembelian"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".halamanproduk.Keranjang"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".edukasi.Education"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".edukasi.TempatPensil"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".registerscreen.RegisterScreen4"
             android:exported="false" />
         <activity
@@ -58,15 +86,21 @@
             android:name=".user.UserAccount1"
             android:exported="false" />
         <activity
-            android:name=".edukasi.Education"
+            android:name=".halamanproduk.MainHalamanProduk"
             android:exported="true">
 
+<<<<<<< HEAD
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+=======
+>>>>>>> 21990bc82a7a24a4d8654121a13ad52e19788e46
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".halamanlogin.Login"
+            android:name=".registerscreen.halamanlogin.Login"
             android:exported="false" />
         <activity
             android:name=".registerscreen.RegisterScreen3"

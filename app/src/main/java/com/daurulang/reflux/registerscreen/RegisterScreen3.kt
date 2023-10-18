@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.daurulang.reflux.R
 import com.daurulang.reflux.databinding.ActivityRegisterScreen3Binding
-import com.daurulang.reflux.halamanlogin.Login
+import com.daurulang.reflux.registerscreen.halamanlogin.Login
 import com.github.dhaval2404.imagepicker.ImagePicker
 
 class RegisterScreen3 : AppCompatActivity() {
