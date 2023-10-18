@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/house_solid"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Toko"
+        android:id="@+id/toko"
+        android:icon="@drawable/bag_shopping_solid"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title=""
+        android:id="@+id/placeholder" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Pojok Edukasi"
+        android:id="@+id/pojokEdukasi"
+        android:icon="@drawable/book_open_solid"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Akun"
+        android:id="@+id/akun"
+        android:icon="@drawable/user_solid"/>
+</menu>

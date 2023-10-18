@@ -28,7 +28,7 @@ class RegisterScreen3 : AppCompatActivity() {
         myView.setBackgroundResource(R.drawable.gradient_drawable)
 
         binding.button.setOnClickListener {
-            startActivity(Intent(this@RegisterScreen3, Login::class.java))
+            startActivity(Intent(this@RegisterScreen3, RegisterScreen4::class.java))
         }
 
         supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.BLUE))

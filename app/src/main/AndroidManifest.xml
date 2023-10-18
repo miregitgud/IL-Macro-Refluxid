@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.floatingactionbuttontobottomnavigation">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -14,6 +18,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Refluxid"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/my_map_api_key" />
+
+        <activity
+            android:name=".LoadingScreenActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".registerscreen.RegisterScreen5"
+            android:exported="false" />
         <activity
             android:name=".halamanproduk.KonfirmasiPembelian"
             android:exported="false">
@@ -72,12 +88,13 @@
         <activity
             android:name=".halamanproduk.MainHalamanProduk"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
+<<<<<<< HEAD
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+=======
+>>>>>>> 21990bc82a7a24a4d8654121a13ad52e19788e46
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -143,6 +160,11 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

@@ -15,6 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tunggu Apalagi?"
+            android:fontFamily="@font/lato_black"
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -30,6 +31,7 @@
             android:layout_height="wrap_content"
             android:text="Bergabung bersama komunitas ReFlux.id,\ndan mulai daur ulangmu dari hari ini!"
             android:textColor="@color/black"
+            android:fontFamily="@font/lato_regular"
             app:layout_constraintBottom_toTopOf="@+id/image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.546"
@@ -48,14 +50,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-        <Button
+        <android.widget.Button
             android:id="@+id/buttonDaftarSekarang"
             android:layout_width="201dp"
-            android:layout_height="48dp"
-            android:backgroundTint="#5999E3"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_rectangle_button"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="@color/white"
             android:gravity="center"
-            android:paddingTop="12dp"
-            android:paddingBottom="12dp"
             android:text="Daftar Sekarang"
             android:textSize="11sp"
             android:textStyle="bold"
@@ -65,23 +67,22 @@
             app:layout_constraintTop_toBottomOf="@+id/image"
             app:layout_constraintVertical_bias="0.051" />
 
-        <Button
+        <android.widget.Button
             android:id="@+id/buttonMasuk"
             android:layout_width="245dp"
-            android:layout_height="56dp"
-            android:backgroundTint="#FFFFFF"
+            android:layout_height="40dp"
+            android:background="@drawable/white_rounded_rectangle_button"
+            android:fontFamily="@font/lato_regular"
             android:gravity="center"
-            android:paddingTop="12dp"
-            android:paddingBottom="12dp"
             android:text="Masuk Sebagai Pengguna"
+            android:textColor="#5999E3"
             android:textSize="11sp"
             android:textStyle="bold"
-            android:textColor="#5999E3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/buttonDaftarSekarang"
-            app:layout_constraintVertical_bias="0.064" />
+            app:layout_constraintVertical_bias="0.062" />
 
         <ImageView
             android:id="@+id/image2"
