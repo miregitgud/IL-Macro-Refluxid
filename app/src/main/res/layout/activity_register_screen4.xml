@@ -33,16 +33,53 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
 
-        <com.google.android.material.radiobutton.MaterialRadioButton
+        <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:button="@null"
-            android:text="UMKM"
-            android:fontFamily="@font/font_family"
+            android:layout_height="70dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:elevation="10dp"
+            android:background="@drawable/white_rounded_rectangle_button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/rb_umkm"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/lato_bold"
+                android:background="@drawable/radio_button_bg_umkm"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="UMKM"
+                android:drawableTop="@drawable/umkm"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rb_pengelola"
+                android:layout_width="114dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/lato_bold"
+                android:background="@drawable/radio_button_bg_pengelola"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="Pengelola"
+                android:drawableTop="@drawable/pengelola"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -38,6 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Buat akun pengguna"
+        android:fontFamily="@font/lato_black"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30sp"
@@ -56,6 +57,7 @@
         android:layout_marginBottom="20dp"
         android:text="Data yang dimasukkan bersifat pribadi dan\nhanya kamu yang bisa melihatnya"
         android:textColor="@color/black"
+        android:fontFamily="@font/lato_regular"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/textInputEditText2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,6 +75,7 @@
         android:paddingStart="10dp"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/lato_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,25 +104,37 @@
             android:paddingStart="10dp"
             android:background="@drawable/edit_text_border"
             android:hint="Kata sandi"
+            android:fontFamily="@font/lato_regular"
             android:inputType="textPassword"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/konfirmasiPasswordInputText"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etKonfirmasiPasswordLayout"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:background="@drawable/edit_text_border"
-        android:hint="Konfirmasi Password"
-        android:inputType="textPassword"
-        android:paddingStart="10dp"
-        android:textSize="15dp"
+        app:passwordToggleEnabled="true"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="261dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.476" />
+        app:layout_constraintVertical_bias="0.476">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etKonfirmasiPassword"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textSize="15dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/edit_text_border"
+            android:hint="Konfirmasi Kata sandi"
+            android:fontFamily="@font/lato_regular"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
         android:id="@+id/EmailInputText"
@@ -128,6 +143,7 @@
         android:background="@drawable/edit_text_border"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:fontFamily="@font/lato_regular"
         android:paddingStart="10dp"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -145,6 +161,7 @@
         android:hint="Nomor Telepon"
         android:inputType="number"
         android:paddingStart="10dp"
+        android:fontFamily="@font/lato_regular"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -160,6 +177,7 @@
         android:background="@drawable/rounded_rectangle_button"
         android:gravity="center"
         android:text="Daftar"
+        android:fontFamily="@font/lato_regular"
         android:textSize="10sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
