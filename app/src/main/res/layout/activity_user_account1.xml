@@ -195,7 +195,7 @@
             app:layout_constraintTop_toBottomOf="@+id/btnTokomu" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/tokomu2"
+            android:id="@+id/btnLogOut"
             android:layout_width="99dp"
             android:layout_height="48dp"
             android:layout_marginTop="8dp"
@@ -210,6 +210,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnPengaturanAplikasi" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

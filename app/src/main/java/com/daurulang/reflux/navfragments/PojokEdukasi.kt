@@ -1,11 +1,17 @@
 package com.daurulang.reflux.navfragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import android.widget.RadioButton
 import com.daurulang.reflux.R
+import com.daurulang.reflux.edukasi.Education
+import com.daurulang.reflux.edukasi.TempatPensil
+import com.daurulang.reflux.edukasi.fragment.BeritaFragment
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,7 +41,20 @@ class PojokEdukasi : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pojok_edukasi, container, false)
+       val view = inflater.inflate(R.layout.activity_education, container, false)
+
+        val btnBerita = view.findViewById<RadioButton>(R.id.rb_Berita)
+        btnBerita.setOnClickListener{
+            val fragment = BeritaFragment()
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.container_fragment_education, fragment)
+                .addToBackStack(null)
+                .commit()
+        }
+
+
+
+        return view
     }
 
     companion object {

@@ -23,6 +23,7 @@ class IdeDaurFragment : Fragment() {
             val intent = Intent(activity, TempatPensil::class.java)
             activity?.startActivity(intent)
         }
+
         return view
     }
 }

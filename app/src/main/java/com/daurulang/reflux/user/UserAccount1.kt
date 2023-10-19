@@ -3,11 +3,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import androidx.databinding.DataBindingUtil
+import com.daurulang.reflux.MainActivity
 import com.daurulang.reflux.R
 import com.daurulang.reflux.databinding.ActivityUserAccount1Binding
+import com.daurulang.reflux.halamanlogin.Login
 
 class UserAccount1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,6 +45,10 @@ class UserAccount1 : AppCompatActivity() {
             popUp()
         }
 
+        binding.btnLogOut.setOnClickListener{
+            startActivity(Intent(this, Login::class.java))
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -66,5 +73,27 @@ class UserAccount1 : AppCompatActivity() {
         }
         val dialog = builder.create()
         dialog.show()
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val intent = Intent(this, MainActivity::class.java)
+
+        when (item.itemId) {
+            android.R.id.home -> {
+                startActivity(intent)
+                return true
+            }
+            else -> {
+                startActivity(intent)
+                return true
+            }
+        }
+    }
+
+
+    override fun onBackPressed() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }

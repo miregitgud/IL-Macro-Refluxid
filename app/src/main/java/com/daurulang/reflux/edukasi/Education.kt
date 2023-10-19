@@ -10,12 +10,14 @@ import android.view.MenuItem
 import android.view.View
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import com.daurulang.reflux.MainActivity
 import com.daurulang.reflux.R
 import com.daurulang.reflux.databinding.ActivityEducationBinding
 import com.daurulang.reflux.edukasi.fragment.BeritaFragment
 import com.daurulang.reflux.edukasi.fragment.ForumFragment
 import com.daurulang.reflux.edukasi.fragment.IdeDaurFragment
 import com.daurulang.reflux.user.UserAccount1
+import com.daurulang.reflux.user.fragment.BelumbayarFragment
 
 
 class Education : AppCompatActivity() {
@@ -29,6 +31,24 @@ class Education : AppCompatActivity() {
         setSupportActionBar(binding.actionbar4)
         supportActionBar?.title = "Pojok Edukasi"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        val showBerita = intent.getBooleanExtra("SHOW_BERITA", false)
+
+        if (showBerita) {
+            val beritaFragment1 = BeritaFragment()
+            val beritaFragment2 = BeritaFragment()
+            binding.containerFragmentEducation.visibility = View.VISIBLE
+            binding.containerFragmentEducation2.visibility = View.VISIBLE
+            binding.containerFragmentEducation3.visibility = View.GONE
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.container_fragment_education, beritaFragment1)
+                .addToBackStack(null)
+                .commit()
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.container_fragment_education2, beritaFragment2)
+                .addToBackStack(null)
+                .commit()
+        }
 
         fun changeFragment (fragment: Fragment, fragment2: Fragment){
             supportFragmentManager.beginTransaction()
@@ -97,7 +117,7 @@ class Education : AppCompatActivity() {
         return true
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val intent = Intent(this@Education, UserAccount1::class.java)
+        val intent = Intent(this@Education, MainActivity::class.java)
 
         when (item.itemId) {
             android.R.id.home -> {
@@ -111,9 +131,8 @@ class Education : AppCompatActivity() {
         }
     }
 
-
     override fun onBackPressed() {
-        val intent = Intent(this, UserAccount1::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()
     }

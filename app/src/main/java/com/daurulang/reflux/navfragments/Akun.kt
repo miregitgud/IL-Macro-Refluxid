@@ -1,11 +1,15 @@
 package com.daurulang.reflux.navfragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import com.daurulang.reflux.R
+import com.daurulang.reflux.user.Pesananmu
+import com.daurulang.reflux.user.UserAccount1
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,7 +39,15 @@ class Akun : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_akun, container, false)
+        val view =  inflater.inflate(R.layout.activity_user_account1, container, false)
+
+        val btnPesananmu = view.findViewById<Button>(R.id.btnPesananmu)
+        btnPesananmu.setOnClickListener{
+            val intent = Intent(activity, UserAccount1::class.java)
+            activity?.startActivity(intent)
+        }
+
+        return view
     }
 
     companion object {

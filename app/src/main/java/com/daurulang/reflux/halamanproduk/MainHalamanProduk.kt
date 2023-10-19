@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.databinding.DataBindingUtil
+import com.daurulang.reflux.MainActivity
 import com.daurulang.reflux.R
 import com.daurulang.reflux.databinding.ActivityMainHalamanProdukBinding
 
@@ -33,13 +34,25 @@ class MainHalamanProduk : AppCompatActivity() {
         return true
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val intent = Intent(this, MainActivity::class.java)
+
         when (item.itemId) {
             android.R.id.home -> {
-                onBackPressed()
+                startActivity(intent)
                 return true
             }
-            else -> return super.onOptionsItemSelected(item)
+            else -> {
+                startActivity(intent)
+                return true
+            }
         }
+    }
+
+
+    override fun onBackPressed() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
 }

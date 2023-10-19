@@ -25,7 +25,9 @@
         <activity
             android:name=".LoadingScreenActivity"
             android:exported="false" />
-
+        <activity
+            android:name=".edukasi.TempatPensil"
+            android:exported="false" />
         <activity
             android:name=".registerscreen.RegisterScreen5"
             android:exported="false" />
