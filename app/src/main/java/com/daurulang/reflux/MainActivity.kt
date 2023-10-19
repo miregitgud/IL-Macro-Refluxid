@@ -38,10 +38,7 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId) {
                 R.id.home -> replaceFragment(Home())
-                R.id.toko -> {
-                    val intent = Intent(this, MainHalamanProduk::class.java)
-                    startActivity(intent)
-                }
+                R.id.toko -> replaceFragment(Toko())
                 R.id.akun -> {
                     val intent = Intent(this, UserAccount1::class.java)
                     startActivity(intent)

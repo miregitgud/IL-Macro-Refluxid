@@ -32,7 +32,7 @@ class Education : AppCompatActivity() {
         supportActionBar?.title = "Pojok Edukasi"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        val showBerita = intent.getBooleanExtra("SHOW_BERITA", false)
+        val showBerita = intent.getBooleanExtra("SHOW_BERITA", true)
 
         if (showBerita) {
             val beritaFragment1 = BeritaFragment()

@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.daurulang.reflux.halamanlogin.Login
 import com.daurulang.reflux.registerscreen.RegisterScreen5
 
-class toko : Fragment() {
+class umkm : Fragment() {
 
     private lateinit var locationInput: EditText
     private lateinit var buttonDaftar: Button
@@ -20,7 +20,7 @@ class toko : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_toko, container, false)
+        val view = inflater.inflate(R.layout.fragment_umkm, container, false)
 
         locationInput = view.findViewById(R.id.textLocationInput) // Replace with the actual ID
         buttonDaftar = view.findViewById(R.id.button) // Replace with the actual ID

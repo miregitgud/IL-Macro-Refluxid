@@ -7,7 +7,7 @@ import androidx.databinding.DataBindingUtil
 import banksampah
 import com.daurulang.reflux.R
 import com.daurulang.reflux.databinding.ActivityRegisterScreen4Binding
-import toko
+import umkm
 
 class RegisterScreen4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,8 +19,8 @@ class RegisterScreen4 : AppCompatActivity() {
             R.layout.activity_register_screen4
         )
 
-        val toko = toko()
-        fragmentTransaction.replace(R.id.container, toko)
+        val umkm = umkm()
+        fragmentTransaction.replace(R.id.container, umkm)
         fragmentTransaction.commit()
 
         val radioButtonA: RadioButton = findViewById(R.id.rb_umkm)
@@ -29,8 +29,8 @@ class RegisterScreen4 : AppCompatActivity() {
         radioButtonA.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 val fragmentTransaction = fragmentManager.beginTransaction()
-                val toko = toko()
-                fragmentTransaction.replace(R.id.container, toko)
+                val umkm = umkm()
+                fragmentTransaction.replace(R.id.container, umkm)
                 fragmentTransaction.commit()
             }
         }

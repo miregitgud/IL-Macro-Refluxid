@@ -19,7 +19,7 @@
 
 
         <ImageButton
-            android:id="@+id/imageView9"
+            android:id="@+id/laporanKontribusi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -31,6 +31,7 @@
             app:layout_constraintVertical_bias="0.571" />
 
         <ImageButton
+            android:id="@+id/kirimSampah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -38,7 +39,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:layout_constraintTop_toBottomOf="@+id/laporanKontribusi"
             app:layout_constraintVertical_bias="0.189" />
 
         <ImageView
