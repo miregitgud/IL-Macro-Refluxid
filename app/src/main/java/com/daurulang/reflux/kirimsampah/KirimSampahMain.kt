@@ -1,4 +1,4 @@
-package com.daurulang.reflux.halamanproduk
+package com.daurulang.reflux.kirimsampah
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,31 +8,27 @@ import android.view.MenuItem
 import androidx.databinding.DataBindingUtil
 import com.daurulang.reflux.MainActivity
 import com.daurulang.reflux.R
-import com.daurulang.reflux.databinding.ActivityMainHalamanProdukBinding
+import com.daurulang.reflux.databinding.ActivityKirimSampahMainBinding
 
-class MainHalamanProduk : AppCompatActivity() {
+class KirimSampahMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding : ActivityMainHalamanProdukBinding = DataBindingUtil.setContentView(this,
-        R.layout.activity_main_halaman_produk
-        )
+        val binding : ActivityKirimSampahMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_kirim_sampah_main)
 
-        setSupportActionBar(binding.actionbarHalamanProduk)
-        supportActionBar?.title = "Halaman Produk"
+        setSupportActionBar(binding.actionBarKirimSampah)
+        supportActionBar?.title = "Pengiriman Sampah"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        binding.btnTambahkeKeranjang.setOnClickListener{
-            startActivity(Intent(this@MainHalamanProduk, Keranjang::class.java))
+        binding.btnKirimSampah.setOnClickListener{
+            startActivity(Intent(this, KonfirmasiPengiriman::class.java))
         }
-        binding.btnBeliSekarang.setOnClickListener{
-            startActivity(Intent(this, KonfirmasiPembelian::class.java))
-        }
-    }
 
+    }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu, menu)
         return true
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val intent = Intent(this, MainActivity::class.java)
 
@@ -53,5 +49,4 @@ class MainHalamanProduk : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
-
 }

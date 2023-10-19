@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import com.daurulang.reflux.databinding.ActivityMainBinding
 import com.daurulang.reflux.edukasi.Education
 import com.daurulang.reflux.halamanproduk.MainHalamanProduk
+import com.daurulang.reflux.kirimsampah.KirimSampahMain
 import com.daurulang.reflux.navfragments.Akun
 import com.daurulang.reflux.navfragments.Home
 import com.daurulang.reflux.navfragments.PojokEdukasi
@@ -50,13 +51,14 @@ class MainActivity : AppCompatActivity() {
                     intent.putExtra("SHOW_BERITA", true)
                     startActivity(intent)
                 }
-
                 else -> {
 
                 }
             }
-
             true
+        }
+        binding.fab.setOnClickListener{
+            startActivity(Intent(this, KirimSampahMain::class.java))
         }
     }
 
